@@ -10,7 +10,7 @@ Get-Content annotation.gff3 | Select-String "gene_name" | Select-Object -First 3
 
 #3
 # Extract gene entry and convert to BED format
-# Change "gene_name" in the 4th, 6th and 8th line and change annptation.gff3 to your .gff3 file's name.
+# Change "gene_name" in the 4th, 6th and 8th line and change annptation.gff3 in the 1st line to your .gff3 file's name.
 Get-Content annotation.gff3 |  
     Where-Object { $_ -notmatch "^#" } |
     ConvertFrom-Csv -Delimiter "`t" -Header seqid,source,type,start,end,score,strand,phase,attributes |
