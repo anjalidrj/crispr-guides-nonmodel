@@ -52,6 +52,7 @@ dependencies:
   - zstd=1.5.7
   - matplotlib=3.7.2
   - seaborn=0.12.2
+  - viennarna=2.6.4
   - pip:
       - certifi==2026.5.20
       - charset-normalizer==3.4.7
@@ -74,4 +75,5 @@ dependencies:
       - tqdm==4.68.2
       - tzdata==2026.2
       - urllib3==2.7.0
+      - forgi==2.0.2
 prefix: /opt/conda/envs/guide-design
